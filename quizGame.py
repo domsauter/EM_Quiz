@@ -132,7 +132,7 @@ def runGame(questions):
         print(question["prompt"])
         for option in question["options"]:
             print(option)
-        answer = input("Bitte gebe deine Antwort(A, B, C oder D) ein:")
+        answer = input("Bitte gebe deine Antwort(A, B, C oder D) ein:").upper()
         if answer == question["answer"]:
             print("Super! Deine Antwort ist richtig!\n")
             score += 1
